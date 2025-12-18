@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Estrella Alba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #e2e8f0;
+        }
+
+        h1, h2, h3, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Estilos específicos para impresión */
+        @media print {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+            .container-page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+                border: none;
+            }
+            /* Restaurar padding original en impresión */
+            main {
+                padding-left: 2.5rem !important; /* px-10 */
+                padding-right: 2.5rem !important;
+            }
+            /* Forzar visualización desktop de los números en impresión */
+            .number-badge {
+                position: absolute !important;
+                left: -2rem !important; /* -left-8 */
+                top: 0.125rem !important; /* top-0.5 */
+            }
+        }
+    </style>
+</head>
+<body class="text-slate-800 min-h-screen flex flex-col items-center justify-start print:py-0 p-0 md:py-8">
+
+    <!-- Hoja A4 (Ancho completo en móvil, max-width en desktop) -->
+    <div class="container-page bg-white w-full md:max-w-[21cm] shadow-none md:shadow-2xl relative flex flex-col min-h-[29.7cm]">
+        
+        <!-- ENCABEZADO -->
+        <header class="w-full relative z-10 shrink-0">
+            <img src="/top.png" 
+                 alt="Encabezado Estrella Alba" 
+                 class="w-full h-auto block"
+                 onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-24 bg-slate-200 flex items-center justify-center text-slate-500 text-sm flex-col\'><i class=\'fas fa-image text-2xl mb-2\'></i><span>Coloca <b>top.png</b> en public</span></div>';">
+        </header>
+
+        <!-- CONTENIDO: px-5 en móvil, px-10 en desktop -->
+        <main class="flex-grow px-5 md:px-10 py-6 relative z-0 flex flex-col justify-center">
+            
+            <!-- Título -->
+            <div class="text-center mb-6 border-b border-slate-200 pb-4">
+                <h1 class="text-xl md:text-2xl font-extrabold text-slate-900 mb-2 tracking-tight uppercase leading-tight">
+                    PROPUESTA DE GESTIÓN DE <br><span class="text-blue-700">REDES SOCIALES</span>
+                </h1>
+                <div class="flex flex-col items-center gap-1 text-slate-700 text-xs md:text-sm">
+                    <p class="font-bold">Cliente: Transporte Estrella Alba</p>
+                    <p class="text-slate-600 max-w-xl text-center leading-snug"><strong>Objetivo:</strong> Profesionalizar la imagen, generar confianza y facilitar la venta de pasajes.</p>
+                </div>
+            </div>
+
+            <div class="space-y-6 md:space-y-5">
+                <!-- 1. Diagnóstico -->
+                <section class="relative">
+                    <!-- Header Responsive: Flex en móvil, Absoluto en Desktop -->
+                    <div class="flex items-center md:block mb-2 gap-3">
+                        <div class="number-badge relative md:absolute md:-left-8 md:top-0.5 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-xs shrink-0">1</div>
+                        <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wide border-l-4 border-blue-600 pl-3">DIAGNÓSTICO ACTUAL</h2>
+                    </div>
+                    
+                    <ul class="space-y-2 md:space-y-1 text-slate-700 text-sm list-disc pl-5 marker:text-blue-500">
+                        <li>El perfil tiene buenas fotos "humanas" (generan confianza), pero le falta información clave para la venta.</li>
+                        <li>No hay enlace directo a WhatsApp (se pierden clientes).</li>
+                        <li>Falta constancia visual para que se vea como una empresa establecida.</li>
+                    </ul>
+                </section>
+
+                <!-- 2. Plan de Trabajo -->
+                <section class="relative">
+                    <div class="flex items-center md:block mb-2 gap-3">
+                        <div class="number-badge relative md:absolute md:-left-8 md:top-0.5 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-xs shrink-0">2</div>
+                        <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wide border-l-4 border-blue-600 pl-3">PLAN DE TRABAJO <span class="text-slate-500 text-xs font-normal normal-case block md:inline">(A partir de Enero)</span></h2>
+                    </div>
+                    
+                    <div class="grid gap-3 text-sm text-slate-700">
+                        <div class="bg-blue-50 p-3 rounded-r-lg border-l-4 border-blue-500 shadow-sm">
+                            <p><strong>Optimización del Perfil:</strong> Rediseño de Foto de Perfil + Biografía nueva + Link directo a WhatsApp.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                                <p><strong>Contenido:</strong> 8 Publicaciones mensuales (2 por semana).</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                                <p><strong>Ejes:</strong> Seguridad de la Flota (La Combi), Experiencia de viaje (Pasajeros) y Rutas/Servicios.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 gap-3">
+                             <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                                <p><strong>Historias:</strong> Cobertura cuando surjan viajes (subir lo que vos me mandes editado).</p>
+                             </div>
+                             <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                                <p><strong>Gestión:</strong> Respuesta básica de comentarios públicos para derivar a WhatsApp.</p>
+                           </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Metodología -->
+                <section class="relative">
+                    <div class="flex items-center md:block mb-2 gap-3">
+                        <div class="number-badge relative md:absolute md:-left-8 md:top-0.5 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-xs shrink-0">3</div>
+                        <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wide border-l-4 border-blue-600 pl-3">METODOLOGÍA</h2>
+                    </div>
+
+                    <ul class="text-sm text-slate-700 list-disc pl-5 marker:text-green-500 space-y-2 md:space-y-1">
+                        <li>Los dos, o sólo yo me encargo de las ideas, redacción y diseño.</li>
+                        <li>Vos solo tenés que aprobar y pasarme fotos cuando tengas viajes.</li>
+                        <li>No te voy a molestar todos los días; nos organizamos una vez al mes, cada 15 días o cuando lo creamos conveniente</li>
+                    </ul>
+                </section>
+
+                <div class="grid md:grid-cols-2 gap-5 pt-2 items-stretch">
+                    <!-- 4. Propuesta Económica -->
+                    <section class="relative h-full flex flex-col">
+                        <div class="flex items-center md:block mb-2 gap-3">
+                            <div class="number-badge relative md:absolute md:-left-8 md:top-0.5 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-xs shrink-0">4</div>
+                            <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wide border-l-4 border-blue-600 pl-3">PROPUESTA ECONÓMICA</h2>
+                        </div>
+                        
+                        <div class="bg-slate-600 text-white p-4 rounded-lg shadow-md relative overflow-hidden flex-grow">
+                            <p class="text-xs text-yellow-300 font-bold mb-2 uppercase tracking-wider">(Precio Promocional)</p>
+                            <div class="text-sm space-y-2 opacity-95">
+                                <p>Por ser etapa de lanzamiento y armado de portfolio:</p>
+                                <div class="text-3xl font-bold text-white py-1">$80.000 <span class="text-sm font-normal text-slate-200">mensuales</span></div>
+                                <p class="text-xs italic text-slate-300">El precio se congela por los primeros 3 meses y es totalmente charlable</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 5. Visión a Futuro -->
+                    <section class="relative h-full flex flex-col">
+                        <div class="flex items-center md:block mb-2 gap-3">
+                             <div class="number-badge relative md:absolute md:-left-8 md:top-0.5 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-xs shrink-0">5</div>
+                             <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wide border-l-4 border-blue-600 pl-3">VISIÓN A FUTURO</h2>
+                        </div>
+                        
+                        <div class="border border-slate-300 bg-slate-50 p-4 rounded-lg text-sm h-full flex-grow flex flex-col justify-center">
+                            <p class="text-xs font-bold text-slate-500 mb-2 uppercase tracking-wider">(Escalabilidad)</p>
+                            <div class="text-slate-600 space-y-2">
+                                <p>Como cuento con perfil técnico de programación, mi objetivo es acompañar el crecimiento de Estrella Alba.</p>
+                                <p><strong>Siguiente paso (a mediano plazo):</strong> Si el volumen de consultas crece, podemos desarrollar una Página Web o Landing Page propia.</p>
+                                <p>Esto permitiría tener un catálogo de viajes online y automatizar pedidos de presupuesto sin depender tanto de responder WhatsApp manualmente.</p>
+                                <p class="text-slate-500 italic text-xs mt-2">Este desarrollo se cotizaría aparte en su momento, pero ya contarías con la persona de confianza para hacerlo.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- PIE DE FOTO -->
+        <footer class="w-full mt-auto relative z-10 shrink-0">
+            <img src="/piedefoto.png" 
+                 alt="Pie de página Estrella Alba" 
+                 class="w-full h-auto block"
+                 onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-24 bg-slate-200 flex items-center justify-center text-slate-500 text-sm flex-col\'><i class=\'fas fa-image text-2xl mb-2\'></i><span>Coloca <b>piedefoto.png</b> en public</span></div>';">
+        </footer>
+
+    </div>
+
+</body>
+</html>
